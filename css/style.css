@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+/* General */
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Search */
+
+#searchForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#input {
+  float: left;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+#pokeball {
+  background-color: transparent;
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border: none;
+  float: right;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+
+#pokeball:hover {
+  transform: scale(1.07);
+}
+
+/* Pokedex General */
+
+#pokedex {
+  width: 750px;
+  margin: 30px auto 0 auto;
+}
+
+#left {
+  width: 400px;
+  height: 500px;
+  float: left;
+  position: relative;
+  background-color: #C0200D;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#right {
+  width: 350px;
+  height: 431px;
+  margin-top: 69px;
+  float: left;
+  position: relative;
+  background-color: #C0200D;
+  border-bottom-right-radius: 25px;
+}
+
+#joint {
+  width: 30px;
+  height: 465px;
+  float: right;
+  margin-top: 35px;
+  margin-right: -1px;
+  background: linear-gradient(to right, #8B0000 0%, #C0200D 50%, #8B0000 100%);
+  position: relative;
+  z-index: 1000;
+}
+
+#junction_1, #junction_2 {
+  width: 30px;
+  height: 30px;
+  background-color: #5E0200;
+  opacity: 0.3;
+}
+
+#junction_1 {
+  margin-top: 40px;
+}
+
+#junction_2 {
+  margin-top: 320px;
+}
+
+/* Pokedex Left Side */
+
+#curve_left_1 {
+  width: 200px;
+  height: 75px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 25px;
+  background-color: #8B0000;
+  position: relative;
+}
+
+#curve_left_2 {
+  width: 210px;
+  height: 40px;
+  margin-left: 190.5px;
+  margin-top: -40px;
+  border-top-left-radius: 25px;
+  background-color: #C0200D;
+  position: relative;
+  z-index: 999;
+}
+
+#box_left_1 {
+  width: 204px;
+  height: 75px;
+  margin-left: 197px;
+  margin-top: -75px;
+  background-color: #8B0000;
+  position: relative;
+  z-index: 1;
+}
+
+#blue_button_1 {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 5px solid #fff;
+  float: left;
+  background: radial-gradient(#05FBFB, #29ABE3);
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#reflection {
+  width: 15px;
+  height: 10px;
+  margin-left: 12.5px;
+  margin-top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+#small_button_1, #small_button_2, #small_button_3 , #small_button_6, #small_button_7{
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  position: relative;
+  float: left;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#small_button_1 {
+  margin-left: 20px;
+  background: radial-gradient(#FB7B7B, #FB0505);
+}
+
+#small_button_2 {
+  margin-left: 10px;
+  background: radial-gradient(#FBFB9B, #FBFB05);
+}
+
+#small_button_3 {
+  margin-left: 10px;
+  background: radial-gradient(#B0FB7B, #50FB05);
+}
+
+#picture_box {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin-left: 35px;
+  margin-top: 18px;
+  background: grey;
+  border-radius: 25px;
+  box-shadow: 0 0 15px #003555 inset;
+}
+
+#small_button_4 {
+  width: 10px;
+  height: 10px;
+  background-color: #C00D0D;
+  border: 1px solid black;
+  float: right;
+  border-radius: 50%;
+  margin-right: 130px;
+  margin-bottom: -10px;
+  margin-top: 5px;
+}
+
+#small_button_5 {
+  width: 10px;
+  height: 10px;
+  background-color: #C00D0D;
+  border: 1px solid black;
+  float: right;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: -12px;
+  margin-top: 5px;
+}
+
+#picture_frame {
+  width: 250px;
+  height: 160px;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 25px;
+  float: left;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #003555 inset;
+}
+
+#triangle_left {
+  width: 0;
+  height: 0;
+  border-bottom: 60px solid #C00D0D;
+  border-right: 60px solid transparent;
+  padding-top: 220px;
+}
+
+#red_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #C00D0D;
+  margin-top: -82px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+#speaker {
+  float: right;
+  width: 75px;
+  height: 28px;
+  margin-top: -36px;
+  margin-right: 35px;
+}
+
+.row {
+  height: 2px;
+  margin-bottom: 7px;
+  background-color: #494949;
+}
+
+#blue_button_2 {
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+  margin-top: 35px;
+  margin-left: 35px;
+  border-radius: 50%;
+  background: linear-gradient(#307BFB 0%, #0530E5 75%);
+  cursor: pointer;
+}
+
+#green_button_1, #green_button_2 {
+  width: 55px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: linear-gradient(#50FB05 0%, #057B05 85%);
+  cursor: pointer;
+}
+
+#green_button_1 {
+  float: left;
+  margin-top: -45px;
+  margin-left: 105px;
+}
+
+#orange_button_1, #orange_button_2 {
+  width: 55px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: linear-gradient(#FB6505 0%, #BB0505 85%);
+  cursor: pointer;
+}
+
+#orange_button_1 {
+  float: right;
+  margin-top: -45px;
+  margin-right: 135px;
+}
+
+#cursor_cross {
+  width: 90px;
+  height: 90px;
+  float: right;
+  margin-right: 25px;
+  margin-top: -60px;
+  cursor: pointer;
+}
+
+#cross_top, #cross_right, #cross_bottom, #cross_left, #cross_middle {
+  width: 30px;
+  height: 30px;
+  background-color: #222;
+}
+
+#cross_top {
+  margin: auto;
+  margin-top: -1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#cross_right {
+  float: right;
+  margin-top: -2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#cross_bottom {
+  margin: auto;
+  margin-top: 28px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#cross_left {
+  width: 30px;
+  height: 30px;
+  margin-top: -62px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#cross_middle {
+  margin: auto;
+  margin-top: -28px;
+}
+
+#top_triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 14px solid black;
+  float: right;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+#right_triangle {
+  width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 14px solid black;
+	border-bottom: 10px solid transparent;
+  margin-top: 4px;
+  margin-left: 9px;
+}
+
+#bottom_triangle {
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 14px solid black;
+  float: right;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+#left_triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 14px solid black;
+  float: left;
+  margin-top: -28px;
+  margin-left: 4px;
+}
+
+#mid_circle {
+  width: 22px;
+  height: 22px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 2px;
+}
+
+/* Pokedex Right Side */
+
+#curve_right_1 {
+  width: 195px;
+  height: 35px;
+  margin-top: -35px;
+  background-color: #C00D0D;
+  border-top-right-radius: 50px;
+}
+#box_right_1 {
+  width: 100px;
+  height: 20px;
+  margin-top: -20px;
+  margin-left: 185px;
+  background-color: #C00D0D;
+}
+#curve_right_2 {
+  width: 150px;
+  height: 40px;
+  margin-left: 188px;
+  margin-top: -40px;
+  border-bottom-left-radius: 25px;
+  background-color: white;
+}
+
+#text_box {
+  width: 250px; 
+  height: 130px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 49px;
+  border-radius: 25px;
+  background-color: #30DA0C;
+  box-shadow: 0 0 15px #003555 inset
+}
+
+#blue_button_rows {
+  width: 262px;
+  height: 70px;
+  margin-top: 19px;
+  margin-left: 55px;
+}
+
+#blue_button {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  float: left;
+  margin: 0px 8px 3px 2px;
+  border-radius: 5px;
+  background: linear-gradient(#307BFB 0%, #0530E5 80%);
+  cursor: pointer;
+}
+
+#small_button_6 {
+  margin-left: 58px;
+  background: radial-gradient(#FF9B5B, #FB6505);
+}
+
+#small_button_7 {
+  margin-left: 10px;
+  background: radial-gradient(#0ABD0A, #057B05);
+}
+
+#green_button_2 {
+  float: right;
+  margin-top: 15px;
+  margin-right: 120px;
+}
+
+#orange_button_2 {
+  float: right;
+  margin-top: 15px;
+  margin-right: -125px;
+}
+
+#yellow_container {
+  width: 260px;
+  height: 100px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#yellow_button_1, #yellow_button_2 {
+  width: 100px;
+  height: 80px;
+  border-radius: 15px;
+  float: left;
+  background: #FFFF00;
+  cursor: pointer;
+}
+
+#yellow_button_1 {
+  margin-top: 10px;
+  margin-left: 12px;
+  
+}
+
+#yellow_button_2 {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+/* API Data */
+
+#sprite {
+  margin: 0 auto;
+  width: 100px;
+  margin-top: 10px;
+}
+
+#name {
+  text-align: center;
+}
+
+#height, #weight, #type {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Reponsive */
+
+@media handheld and (orientation: portrait), (max-width: 770px) {
+  #pokedex {
+    width: 400px;
+  }
+  #left {
+    width: 400px;
+    height: 500px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  #right {
+    display: none;
+  }
+  
+  #closed {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-top: 74px;
+    background-color: #C0200D;
+    z-index: 100;
+  }
+  
+  #searchForm, pokeball {
+    display: none;
+  }
+}
