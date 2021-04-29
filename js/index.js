@@ -41,3 +41,6 @@ function getPokeInfo() {
 }
 
 document.getElementById("pokeball").addEventListener("click", getPokeInfo);
+document.getElementById("input").addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode === 13) getPokeInfo();
+})
